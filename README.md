@@ -1,5 +1,7 @@
 # RAAR: Retrieval Augmented Agentic Reasoning for Cross-Domain Misinformation Detection
 
+The code is being organized and will be released soon... 
+
 ## Models in RAAR
 
 There are a series of RAAR models, including RAAR-8b, RAAR-14b, MisSFT-8b, and MisSFT-14b.
