@@ -1,6 +1,13 @@
 # RAAR: Retrieval Augmented Agentic Reasoning for Cross-Domain Misinformation Detection
 
+[RAAR paper](https://arxiv.org/abs/2601.04853)
+
 The code is being organized and will be released soon... 
+
+## News
+
+📢 *Jan. 2026* New preprint paper "RAAR: Retrieval Augmented Agentic Reasoning for Cross-Domain Misinformation Detection" [arXiv](https://arxiv.org/abs/2601.04853).
+
 
 ## Models in RAAR
 
