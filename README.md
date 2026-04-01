@@ -50,3 +50,29 @@ python cot_build.py
 - SFT: We use the mature LLama-factory framework for SFT training. Please refer to the [LLama-factory code](https://github.com/hiyouga/LlamaFactory).
 - RL: We use the mature open-r1 framework for SFT training. Please refer to the [openr1 code](https://github.com/huggingface/open-r1).
 
+## Environment Setup
+
+For LLamafactory, please follow the instructions of [Original code](https://github.com/hiyouga/LlamaFactory). The RL training relies on specific library versions. Please follow these steps strictly to avoid dependency conflicts.
+
+```bash
+# Cuda version
+Load the CUDA module required for compilation (CUDA 12.4 is recommended).
+nvcc –version # check the current CUDA version
+Nvidia-smi # check the highest version your server supports
+# can download the specific version of CUDA at https://developer.nvidia.com/cuda-downloads. Please carefully consider this step depending on your server permissions.
+
+
+
+# Install Key Dependencies
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+pip install transformers==4.55.0 accelerate==1.7.0 trl==0.21.0 deepspeed==0.16.9
+pip install transformers==4.55.0 accelerate==1.7.0 trl==0.21.0 deepspeed==0.16.9
+
+# flash attention: If a direct pip install fails, you may need to download the pre-compiled wheel (.whl) file corresponding to your Python and CUDA version from the Flash Attention Releases.
+
+pip install flash-attn==2.7.4.post1
+
+pip install vllm==0.8.5.post1
+pip install math-verify==0.8.0 latex2sympy2_extended==1.10.2
+pip install wandb==0.20.1
+```
